@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
   <title><%= project.title %> - Kaera's Portfolio</title>
 </head>
@@ -14,7 +15,7 @@
       <nav class="navbar navbar-expand">
         <div class="container-fluid">
           <a class="navbar-brand" href="/">
-            <img src="/logo.png" >
+            <img src="/images/logo.png" style="width:60px; height: auto;" >
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -40,16 +41,73 @@
     </div>
     <br>
     
-    <div class="rounded-container">
+    <div class="outer-container">
+      <div class="rounded-container">
         <h1><%= project.title %></h1>        
-        <div style="text-align: center; margin: 30px 0;">
-            <img src="/images/<%= project.image %>" alt="<%= project.title %>" style="max-width: 100%; border-radius: 20px;">
-        </div>
         
-        <p><%= project.description %></p>
+        <!-- Main Image -->
+        <div style="text-align: center; margin: 30px 0;">
+            <img src="/images/<%= project.mainImage %>" alt="<%= project.title %>" class="hero-image">
+        </div>
+
+        <!-- Text Container 1 -->
+        <% if (project.text1 || project.text2 || project.text3) { %>
+        <div class="text-container">
+            <% if (project.text1) { %><p><%= project.text1 %></p><% } %>
+            <% if (project.text2) { %><p><%= project.text2 %></p><% } %>
+            <% if (project.text3) { %><p><%= project.text3 %></p><% } %>
+        </div>
+        <% } %>
+
+        <!-- Image 1 -->
+        <% if (project.image1) { %>
+            <div style="text-align: center; margin: 30px 0;">
+                <img src="/images/<%= project.image1 %>" alt="<%= project.title %>" class="section-image">
+            </div>
+        <% } %>
+        
+        <!-- Text Container 2 -->
+        <% if (project.text4 || project.text5 || project.text6) { %>
+        <div class="text-container">
+            <% if (project.text4) { %><p><%= project.text4 %></p><% } %>
+            <% if (project.text5) { %><p><%= project.text5 %></p><% } %>
+            <% if (project.text6) { %><p><%= project.text6 %></p><% } %>
+        </div>
+        <% } %>
+        
+        <!-- Video 1 -->
+        <% if (project.video1) { %>
+            <div style="text-align: center; margin: 30px 0;">
+                <video controls class="project-video-custom">
+                    <source src="/files/<%= project.video1 %>" type="video/mp4">
+                </video>
+            </div>
+        <% } %>
+        
+        <!-- Text Container 3 -->
+        <% if (project.text7 || project.text8 || project.text9 || project.text10) { %>
+        <div class="text-container">
+            <% if (project.text7) { %><p><%= project.text7 %></p><% } %>
+            <% if (project.text8) { %><p><%= project.text8 %></p><% } %>
+            <% if (project.text9) { %><p><%= project.text9 %></p><% } %>
+            <% if (project.text10) { %><p><%= project.text10 %></p><% } %>
+        </div>
+        <% } %>
+
+        <!-- File 1 -->
+        <% if (project.file1) { %>
+            <div style="text-align: center; margin: 30px 0;">
+                <a href="/files/<%= project.file1.path %>" download style="display: inline-block; padding: 15px 30px; background: #888; color: white; text-decoration: none; border-radius: 10px;">
+                    📄 Download <%= project.file1.name %>
+                </a>
+            </div>
+        <% } %>
+
         
         <br>
-        <a href="/portfolio" class="btn btn-primary">Back to Portfolio</a>
+        <a href="/portfolio" class="btn btn-primary" style="text-align:center">Back to Portfolio</a>
+      </div>
     </div>
+    
 </body>
 </html>

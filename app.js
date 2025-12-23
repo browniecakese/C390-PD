@@ -88,12 +88,21 @@ app.get('/work/:id', (req, res) => {
     },
 
     work5: {
-        title: 'Project 5',
-        mainImage: 'project5.jpg',
-        images: [],
-        description: [
-            'Description of project 5'
-        ]
+        title: 'Event Tracker',
+        mainImage: 'cat2_work2_ss1.png',
+        text1: 'Overview: The Event Tracker is a simple web-based application developed using Node.js and Express to help users record and manage events they have participated in. The project focuses on implementing core web development concepts such as routing, form handling, and dynamic content rendering, while presenting information in a clear and visually structured interface using Bootstrap.',
+        text2: 'The application allows users to view a list of events, add new events, and update or delete existing entries, providing a complete basic CRUD experience.',
+        text3: 'Concept and Design Vision: The main concept behind the Event Tracker was to create a personal and easy-to-use platform for documenting dance related events. Rather than building a complex database driven system, the project emphasizes understanding server-side logic, page navigation, and user interaction flow. The design vision prioritizes clarity and simplicity. Each page serves a single purpose, ensuring users can immediately understand what actions are available. A consistent navigation bar across all pages helps maintain familiarity and ease of movement throughout the application.',
+        image1: 'cat2_work2_ss2.png',
+        text4: 'Application Structure and Navigation: The application is structured into three main pages: Home, Events, and Add Event. The homepage functions as a welcoming introduction, briefly explaining the purpose of the tracker. From there, users can navigate to the Events page to view all recorded events or access the Add Event page to create new entries. This clear separation of functionality helps keep the interface intuitive and user-friendly.',
+        text5: 'Event Display and Interaction: The Events page is the core feature of the application. It combines both visual and textual elements to present event information effectively. A Bootstrap carousel is used to showcase images from different events, adding visual interest and context to the listed content.',
+        text6: 'Below the carousel, events are displayed in a dynamically generated list that includes the event title, date, and genre. Each event entry provides options to edit or delete the event, allowing users to manage their records directly from the page.',
+        image2: 'cat2_work2_ss3.png',
+        text7:'Adding and Editing Events: The Add Event page allows users to submit new event details through a simple form. Once submitted, the event is added to the existing list and immediately displayed on the Events page. An Edit Event feature is also included, enabling users to modify previously added events. The edit form is pre-filled with existing data to improve usability and reduce errors. Together, these features demonstrate effective handling of user input and server-side data updates.',
+        text8: 'User Experience and Usability: The user experience focuses on straightforward interactions and minimal complexity. Forms are clearly labeled, navigation is consistent, and feedback is immediate through page redirection after actions such as adding, editing, or deleting events. Bootstrap components are used to ensure responsive layout and visual consistency across different screen sizes, while keeping the interface clean and uncluttered.',
+        text9: 'Development Process: The project was developed incrementally, beginning with setting up the Express server and basic routing. Core features such as event listing and page navigation were implemented first, followed by form handling for adding events. Additional functionality, including editing, deleting, and the event carousel, was added after the core structure was established. This iterative approach allowed for testing and refinement at each stage of development.',
+        image2: 'cat2_work2_ss4.png',
+        text10: 'Reflection and Outcome: The Event Tracker project successfully demonstrates the fundamentals of building a server-side web application with Express. It highlights the integration of backend logic with frontend presentation, as well as the implementation of essential CRUD functionality. Through this project, valuable experience was gained in structuring routes, handling user input, and designing a simple yet functional user interface. The final outcome is a cohesive application that balances usability, visual engagement, and technical clarity, making it a strong example of foundational full-stack web development'
     }
 };
     

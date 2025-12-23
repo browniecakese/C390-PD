@@ -83,6 +83,13 @@
                 </video>
             </div>
         <% } %>
+
+        <!-- Image 2 -->
+        <% if (project.image2) { %>
+            <div style="text-align: center; margin: 30px 0;">
+                <img src="/images/<%= project.image2 %>" alt="<%= project.title %>" class="section-image">
+            </div>
+        <% } %>
         
         <!-- Text Container 3 -->
         <% if (project.text7 || project.text8 || project.text9 || project.text10) { %>
@@ -100,6 +107,13 @@
                 <a href="/files/<%= project.file1.path %>" download style="display: inline-block; padding: 15px 30px; background: #888; color: white; text-decoration: none; border-radius: 10px;">
                     📄 Download <%= project.file1.name %>
                 </a>
+            </div>
+        <% } %>
+
+        <!-- Image 3 -->
+        <% if (project.image3) { %>
+            <div style="text-align: center; margin: 30px 0;">
+                <img src="/images/<%= project.image3 %>" alt="<%= project.title %>" class="section-image">
             </div>
         <% } %>
 

@@ -43,7 +43,7 @@ app.get('/work/:id', (req, res) => {
     // Project data
     const projects = {
     work1: {
-        title: 'Digital Banner',
+        title: 'Digital Banner', // Design
         mainImage: 'cat1_work1.jpg',
         text1: `Overview: This digital banner was created as part of a school assignment where we were tasked with designing a 336x280px advertisement for a fictional travel company called Travelly. The main objective of the work was to promote the company's travel packages and its flight and hotel booking services through an eye-catching and engaging design.`,
         text2: `Concept: The concept I chose for this digital banner was inspired by the hobby of scrapbooking. Scrapbooking is a creative hobby where people note down past experiences like travelling or special occasions in books, decorated with stickers, tape and drawings, to reminisce good memories from those experiences. I wanted to capture that nostalgic and heartfelt feeling in the banner to show that after using Travelly’s services, customers end up with amazing trips and wonderful memories. Using this idea gives the digital banner a personal and relatable touch and allows Travelly to come across more friendly and inviting towards potential customers. This concept approach also sets the design apart from typical advertisements, making it distinctive and attention-grabbing to viewers.`,
@@ -52,7 +52,7 @@ app.get('/work/:id', (req, res) => {
     },
 
     work2: {
-        title: '3x3 Grid',
+        title: '3x3 Grid', // Design
         mainImage: 'cat1_work2.png',
         text1: `Overview: This 3x3 grid was created as a part of a school assignment where we were tasked with designing a 3x3 Instagram Grid advertisement for a fictional travel company called Travelly. The main objective of this work was to design a cohesive social media campaign that promotes the company's discounts while encouraging user engagement.`,
         text2:  `Concept: The concept behind my design was inspired by the classic board game Snakes & Ladders. I chose this theme because it evokes nostalgia and playfulness, these feelings remind viewers of good childhood memories and memories in general. However I removed the 'snakes' portion of the game as they traditionally represent negative setbacks in the game, since the purpose of this design was to encourage positive thinking and excitement about Travelly's promotions, I kept the ladders which help to represent opportunity and adventures.`,
@@ -62,15 +62,34 @@ app.get('/work/:id', (req, res) => {
     },
     
     work3: {
-        title: 'Project 3',
+        title: 'Character Design', // Design
         mainImage: 'project3.jpg',
-        images: [],
-        description: [
-            'Description of project 3'
-        ]
+        text1:'',
+        text2:'',
+        text3:'',
+        text4:"",
     },
+
     work4: {
-        title: 'VR Game - The Greenhouse Escape',
+        title: 'Learn@RP App', // Design
+        mainImage: 'project3.jpg',
+        text1:'',
+        text2:'',
+        text3:'',
+        text4:"",
+    },
+
+    work5: {
+        title: 'Ecommerce App', // Design
+        mainImage: 'project3.jpg',
+        text1:'',
+        text2:'',
+        text3:'',
+        text4:"",
+    },
+
+    work6: {
+        title: 'VR Game - The Greenhouse Escape', //Development
         mainImage: 'cat2_work1_ss1.jpg',
         text1: 'Overview: The Greenhouse Escape is a short virtual reality (VR) escape room project designed to combine exploration, problem-solving, and environmental storytelling. Set inside an abandoned greenhouse, the experience challenges players to solve a sequence of interactive puzzles in order to escape. The project was developed with a focus on accessibility and ease of play, making it suitable for newcomers to both VR and escape room experiences.',
         text2: 'Concept and Design Vision: The main idea behind the project was to create an immersive yet relaxing puzzle environment where players could learn basic VR interaction mechanics while being engaged through curiosity and discovery. Instead of emphasizing difficulty or time pressure, the design encourages players to explore freely and think logically at their own pace.',
@@ -87,8 +106,8 @@ app.get('/work/:id', (req, res) => {
         text10: 'Reflection and Outcome: Through The Greenhouse Escape, the project demonstrates how simple design choices can create an engaging VR experience without relying on complex mechanics. The final product achieves a balance between accessibility and immersion, offering players a calm yet rewarding escape room experience. It also served as a valuable exercise in integrating environmental design, puzzle logic, and user experience principles into a cohesive VR project.'
     },
 
-    work5: {
-        title: 'Event Tracker',
+    work7: {
+        title: 'Event Tracker', //Development
         mainImage: 'cat2_work2_ss1.png',
         text1: 'Overview: The Event Tracker is a simple web-based application developed using Node.js and Express to help users record and manage events they have participated in. The project focuses on implementing core web development concepts such as routing, form handling, and dynamic content rendering, while presenting information in a clear and visually structured interface using Bootstrap.',
         text2: 'The application allows users to view a list of events, add new events, and update or delete existing entries, providing a complete basic CRUD experience.',
@@ -105,8 +124,8 @@ app.get('/work/:id', (req, res) => {
         text10: 'Reflection and Outcome: The Event Tracker project successfully demonstrates the fundamentals of building a server-side web application with Express. It highlights the integration of backend logic with frontend presentation, as well as the implementation of essential CRUD functionality. Through this project, valuable experience was gained in structuring routes, handling user input, and designing a simple yet functional user interface. The final outcome is a cohesive application that balances usability, visual engagement, and technical clarity, making it a strong example of foundational full-stack web development'
     },
 
-    work6: {
-        title: 'Calorie Tracker',
+    work8: {
+        title: 'Calorie Tracker', // Development
         mainImage: 'cat2_work3_ss1.jpg',
         text1: 'Overview: The Daily Calorie Tracker is a mobile application developed using React Native that enables users to record, manage, and review their daily calorie intake. The application allows users to input food items along with their calorie values and organizes these entries into predefined meal categories. By calculating totals and providing a summary of daily consumption, the app supports users in gaining a clearer understanding of their eating patterns and overall calorie intake.',
         text2: 'Concept and Design Vision: The core concept of the Daily Calorie Tracker was to design a lightweight and efficient mobile application that focuses on essential calorie tracking functionality without unnecessary complexity. The design emphasizes structured data representation and straightforward interactions, ensuring that users can log information quickly and accurately. Meal-based categorization was intentionally chosen to reflect common daily eating routines and to make the tracked data more meaningful and easier to interpret.',
@@ -122,8 +141,45 @@ app.get('/work/:id', (req, res) => {
         image3: 'cat2_work3_ss4.jpg',
         text10: 'Reflection and Outcome: The Daily Calorie Tracker demonstrates a strong understanding of React Native fundamentals, including component-based architecture, state management, and dynamic data rendering. The project successfully integrates user input handling with real-time calculations to create a functional and informative mobile application. Through this project, practical experience was gained in structuring mobile app logic, managing grouped data efficiently, and designing interfaces that prioritize usability. The final application effectively balances technical implementation with user-centered design, making it a solid example of applied mobile development skills.',
         video1: 'cat2_work3_video.mp4'
-    }
+    },
 
+    work9: {
+        title: 'Name', // Development
+        mainImage: 'image.jpg',
+        text1: '',
+        text2: '',
+        text3: '',
+        image1: 'image.jpg',
+        text4: '',
+        text5: '',
+        text6: '',
+        image2: 'image.jpg',
+        text7:'',
+        text8: '',
+        text9: '',
+        image3: 'image.jpg',
+        text10: '',
+        video1: 'video.mp4'
+    },
+
+    work10: {
+        title: 'Name', // Development
+        mainImage: 'image.jpg',
+        text1: '',
+        text2: '',
+        text3: '',
+        image1: 'image.jpg',
+        text4: '',
+        text5: '',
+        text6: '',
+        image2: 'image.jpg',
+        text7:'',
+        text8: '',
+        text9: '',
+        image3: 'image.jpg',
+        text10: '',
+        video1: 'video.mp4'
+    },
 
 };
     

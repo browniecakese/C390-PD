@@ -2,6 +2,7 @@ const express = require('express');
 const session = require('express-session');
 const flash = require('connect-flash');
 const app = express();
+require('dotenv').config();
 
 // Set up view engine
 app.set('view engine', 'ejs');
@@ -63,29 +64,41 @@ app.get('/work/:id', (req, res) => {
     
     work3: {
         title: 'Character Design', // Design
-        mainImage: 'project3.jpg',
+        mainImage: 'cat1_work3_ss1.png',
+        image1:'cat1_work3_ss2.png',
+        image2:'cat1_work3_ss3.png',
         text1:'',
         text2:'',
         text3:'',
         text4:"",
+        file1:{name:'Character Design', path:'cat1_work3.ai'}
     },
 
     work4: {
         title: 'Learn@RP App', // Design
-        mainImage: 'project3.jpg',
+        mainImage: 'cat1_work4_ss1',
+        image1:'cat1_work4_ss1.png',
+        image2:'cat1_work4_ss2.png',
+        image3:'cat1_work4_ss3.png',
         text1:'',
         text2:'',
         text3:'',
         text4:"",
+        file1:{name:"Learn@RP App", path:'cat1_work4.fig'},
+        video1:"cat1_work4_video_mp4"
     },
 
     work5: {
-        title: 'Ecommerce App', // Design
-        mainImage: 'project3.jpg',
+        title: 'E-Commerce App', // Design
+        mainImage: 'cat1_work5_ss1.png',
         text1:'',
         text2:'',
         text3:'',
         text4:"",
+        image1:"cat1_work5_ss2.png",
+        image2:"cat1_work5_ss3.png",
+        file1:{name:"E-Commerce App", path:"cat1_work5.fig"},
+        video1: "cat1_work5_video.mp4"
     },
 
     work6: {

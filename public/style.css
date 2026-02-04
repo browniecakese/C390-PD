@@ -583,7 +583,7 @@ h1::after {
     box-shadow: 0 16px 64px rgba(0,0,0,0.2);
 }
 
-/* Skills Section */
+/* Skills Section - OLD (keeping for backwards compatibility) */
 .skills-section {
     padding: 60px 20px;
     margin: 40px 0;
@@ -664,6 +664,116 @@ h1::after {
     font-size: 0.95rem;
     line-height: 1.6;
     margin: 0;
+}
+
+/* ============================================
+   NEW SKILLS SECTION - Table Layout
+   ============================================ */
+.skills-section-new {
+    padding: 60px 0;
+    margin: 60px 0;
+    animation: fadeIn 1s ease-out;
+}
+
+.skills-main-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: #333;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.skills-main-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 4px;
+    background: linear-gradient(90deg, #d4a574, #c89b5f);
+    border-radius: 2px;
+}
+
+.skills-two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.skills-column {
+    background: linear-gradient(135deg, rgba(240, 234, 214, 0.3), rgba(255, 255, 255, 0.5));
+    border-radius: 20px;
+    padding: 30px;
+    border: 2px solid rgba(200, 155, 95, 0.15);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    transition: all 0.3s ease;
+}
+
+.skills-column:hover {
+    border-color: rgba(200, 155, 95, 0.3);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.skills-column-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(200, 155, 95, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skills-column-title i {
+    color: #c89b5f;
+    font-size: 1.3rem;
+}
+
+.skills-table {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.skill-row {
+    padding: 12px 15px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    border-left: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.skill-row:hover {
+    background: rgba(255, 255, 255, 0.8);
+    border-left-color: #c89b5f;
+    transform: translateX(5px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.skill-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 3px;
+    letter-spacing: 0.3px;
+}
+
+.skill-description {
+    font-size: 0.8rem;
+    color: #666;
+    line-height: 1.5;
+    font-weight: 400;
 }
 
 /* Certificates Section */
@@ -1241,6 +1351,34 @@ h1::after {
         margin: 0 auto;
     }
 
+    /* New Skills Section Responsive */
+    .skills-two-column {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .skills-main-title {
+        font-size: 2.2rem;
+        letter-spacing: 3px;
+    }
+
+    .skills-column {
+        padding: 25px 20px;
+    }
+
+    .skills-column-title {
+        font-size: 1.2rem;
+        letter-spacing: 1.5px;
+    }
+
+    .skill-name {
+        font-size: 0.85rem;
+    }
+
+    .skill-description {
+        font-size: 0.75rem;
+    }
+
     .certificates-container {
         gap: 30px;
     }
@@ -1369,6 +1507,33 @@ h1::after {
     .home-hero h1 {
         font-size: 2.5rem;
     }
+
+    /* New Skills Section Mobile */
+    .skills-main-title {
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+    }
+
+    .skills-column {
+        padding: 20px 15px;
+    }
+
+    .skills-column-title {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+    }
+
+    .skill-row {
+        padding: 10px 12px;
+    }
+
+    .skill-name {
+        font-size: 0.8rem;
+    }
+
+    .skill-description {
+        font-size: 0.7rem;
+    }
 }
 
 /* Utility classes for animations */
@@ -1380,7 +1545,7 @@ h1::after {
     animation: fadeInUp 1s ease-out;
 }
 
-/* Scrollbar styling*/
+/* Scrollbar styling (optional but nice touch) */
 ::-webkit-scrollbar {
     width: 12px;
 }

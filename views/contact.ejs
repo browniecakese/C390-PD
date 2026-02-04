@@ -53,7 +53,7 @@
             
             <div class="col-12 col-md-6 contact-info">
               <p style="text-align: left; padding-left: 200px;">Phone number: +(65) 8102 0094</p>
-              <p style="text-align: left; padding-left: 200px;">Email: kabarber4760@gmail.com</p>
+              <p style="text-align: left; padding-left: 200px;">Email: kaera.barber@gmail.com</p>
             </div>
           </div>
           <br>
@@ -87,40 +87,47 @@
           <hr>
           <br>
           
-          <!-- Contact Form -->
+          <!-- Contact Form - Letter/Note Style -->
           <div class="row justify-content-center">
-            <div class="col-12 col-md-8">
-              <h3 class="text-center mb-4">Send me a message</h3>
-              <form action="https://formspree.io/f/mojlgrjv" method="POST">
-                <div class="mb-3">
-                  <label for="name" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="name" name="name" required>
+            <div class="col-12 col-md-10 col-lg-8">
+              <div class="letter-container">
+                <div class="letter-header">
+                  <i class="fas fa-envelope-open-text"></i>
+                  <h3>Send me a message</h3>
                 </div>
                 
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-                
-                <div class="mb-3">
-                  <label for="subject" class="form-label">Subject</label>
-                  <input type="text" class="form-control" id="subject" name="subject" required>
-                </div>
-                
-                <div class="mb-3">
-                  <label for="message" class="form-label">Message</label>
-                  <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                </div>
-                
-                <div class="text-center">
-                  <button type="submit" class="btn btn-primary">Send Message</button>
-                </div>
-              </form>
+                <form action="https://formspree.io/f/mojlgrjv" method="POST" class="letter-form">
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control letter-input" id="name" name="name" placeholder="Your name" required>
+                  </div>
+                  
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control letter-input" id="email" name="email" placeholder="your.email@example.com" required>
+                  </div>
+                  
+                  <div class="mb-3">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control letter-input" id="subject" name="subject" placeholder="What's this about?" required>
+                  </div>
+                  
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control letter-textarea" id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+                  </div>
+                  
+                  <div class="letter-footer">
+                    <button type="submit" class="letter-send-btn">
+                      <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
 </body>
 </html>

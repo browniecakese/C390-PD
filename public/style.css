@@ -986,6 +986,167 @@ h1::after {
     margin-bottom: 40px;
 }
 
+/* Letter/Note Container Styles */
+.letter-container {
+    background: linear-gradient(135deg, #fffef9 0%, #faf8f0 100%);
+    border: 2px solid #d4a574;
+    border-radius: 15px;
+    padding: 0;
+    box-shadow: 
+        0 10px 40px rgba(0,0,0,0.1),
+        inset 0 1px 0 rgba(255,255,255,0.8);
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.letter-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: repeating-linear-gradient(
+        90deg,
+        #d4a574 0px,
+        #d4a574 20px,
+        transparent 20px,
+        transparent 40px
+    );
+}
+
+.letter-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: repeating-linear-gradient(
+        90deg,
+        #d4a574 0px,
+        #d4a574 20px,
+        transparent 20px,
+        transparent 40px
+    );
+}
+
+.letter-header {
+    background: linear-gradient(135deg, #f5f3ed 0%, #ebe8df 100%);
+    padding: 30px;
+    text-align: center;
+    border-bottom: 2px dashed #d4a574;
+    position: relative;
+}
+
+.letter-header i {
+    font-size: 2.5rem;
+    color: #c89b5f;
+    margin-bottom: 15px;
+    display: block;
+    animation: letterBounce 2s ease-in-out infinite;
+}
+
+@keyframes letterBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.letter-header h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    color: #333;
+    margin: 0;
+    font-weight: 600;
+}
+
+.letter-form {
+    padding: 40px 35px 35px;
+}
+
+.letter-form .form-label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+}
+
+.letter-input,
+.letter-textarea {
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(212, 165, 116, 0.2);
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 0.95rem;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.letter-input:focus,
+.letter-textarea:focus {
+    background: white;
+    border-color: #c89b5f;
+    box-shadow: 0 0 0 0.2rem rgba(200, 155, 95, 0.15);
+    outline: none;
+}
+
+.letter-textarea {
+    resize: vertical;
+    min-height: 150px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+.letter-footer {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.letter-send-btn {
+    background: linear-gradient(135deg, #d4a574, #c89b5f);
+    color: white;
+    border: none;
+    padding: 14px 40px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(200, 155, 95, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.letter-send-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.letter-send-btn:hover::before {
+    left: 100%;
+}
+
+.letter-send-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(200, 155, 95, 0.4);
+}
+
+.letter-send-btn:active {
+    transform: translateY(0);
+}
+
+.letter-send-btn i {
+    margin-right: 8px;
+}
+
 /* Social Media Links */
 .social-links {
     display: flex;
@@ -1466,6 +1627,32 @@ h1::after {
     .skills-grid {
         grid-template-columns: 1fr;
     }
+
+    /* Letter Container Responsive */
+    .letter-container {
+        margin: 0 10px;
+    }
+
+    .letter-header {
+        padding: 25px 20px;
+    }
+
+    .letter-header h3 {
+        font-size: 1.5rem;
+    }
+
+    .letter-header i {
+        font-size: 2rem;
+    }
+
+    .letter-form {
+        padding: 30px 20px 25px;
+    }
+
+    .letter-send-btn {
+        padding: 12px 35px;
+        font-size: 0.95rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1533,6 +1720,45 @@ h1::after {
 
     .skill-description {
         font-size: 0.7rem;
+    }
+
+    /* Letter Container Mobile */
+    .letter-container {
+        margin: 0 5px;
+        border-radius: 12px;
+    }
+
+    .letter-header {
+        padding: 20px 15px;
+    }
+
+    .letter-header h3 {
+        font-size: 1.3rem;
+    }
+
+    .letter-header i {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .letter-form {
+        padding: 25px 15px 20px;
+    }
+
+    .letter-form .form-label {
+        font-size: 0.9rem;
+    }
+
+    .letter-input,
+    .letter-textarea {
+        padding: 10px 14px;
+        font-size: 0.9rem;
+    }
+
+    .letter-send-btn {
+        padding: 12px 30px;
+        font-size: 0.9rem;
+        width: 100%;
     }
 }
 

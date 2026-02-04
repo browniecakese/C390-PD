@@ -74,15 +74,6 @@
             <% if (project.text6) { %><p><%= project.text6 %></p><% } %>
         </div>
         <% } %>
-        
-        <!-- Video 1 -->
-        <% if (project.video1) { %>
-            <div style="text-align: center; margin: 30px 0;">
-                <video controls class="project-video-custom">
-                    <source src="/files/<%= project.video1 %>" type="video/mp4">
-                </video>
-            </div>
-        <% } %>
 
         <!-- Image 2 -->
         <% if (project.image2) { %>
@@ -101,6 +92,22 @@
         </div>
         <% } %>
 
+        <!-- Image 3 -->
+        <% if (project.image3) { %>
+            <div style="text-align: center; margin: 30px 0;">
+                <img src="/images/<%= project.image3 %>" alt="<%= project.title %>" class="section-image">
+            </div>
+        <% } %>
+
+        <!-- Video 1 -->
+        <% if (project.video1) { %>
+            <div style="text-align: center; margin: 30px 0;">
+                <video controls class="project-video-custom">
+                    <source src="/files/<%= project.video1 %>" type="video/mp4">
+                </video>
+            </div>
+        <% } %>
+
         <!-- File 1 -->
         <% if (project.file1) { %>
             <div style="text-align: center; margin: 30px 0;">
@@ -110,14 +117,6 @@
             </div>
         <% } %>
 
-        <!-- Image 3 -->
-        <% if (project.image3) { %>
-            <div style="text-align: center; margin: 30px 0;">
-                <img src="/images/<%= project.image3 %>" alt="<%= project.title %>" class="section-image">
-            </div>
-        <% } %>
-
-        
         <br>
         <a href="/portfolio" class="btn btn-primary" style="text-align:center">Back to Portfolio</a>
       </div>

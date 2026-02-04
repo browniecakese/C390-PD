@@ -87,7 +87,7 @@ app.get('/work/:id', (req, res) => {
         text4:"Image Editing & Composition: Figma was used to design the interface using a component-based approach, allowing elements such as buttons, icons, and cards to remain consistent throughout the app. Widgets such as Unsplash and Icons8 were used to source high-quality images and icons, which helped enhance the visual appeal while maintaining a cohesive style. Auto layout and grid systems were applied to ensure proper spacing and alignment across different screens. A consistent colour palette and typography system were established to reinforce the app’s identity and improve visual clarity. The overall composition of each screen was designed to prioritise essential content while keeping secondary information easily accessible",
         text5:"Reflection: Through this project, I developed a stronger understanding of UI design principles and how layout, spacing, and hierarchy affect usability. I also gained experience in designing consistent components and structuring screens in a way that supports intuitive navigation. If given more time, I would further refine the interface through usability testing and explore additional features to enhance the student experience. Overall, this project strengthened my skills in interface design, layout planning, and design system thinking.",
         file1:{name:"Learn@RP App", path:'cat1_work4.fig'},
-        video1:"cat1_work4_video_mp4"
+        video1:"cat1_work4_video.mp4"
     },
 
     work5: {

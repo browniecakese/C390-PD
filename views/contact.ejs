@@ -60,39 +60,62 @@
           <hr>
           <br>
           
-          <!-- Social Media Links -->
-          <div class="row"> 
-            <div class="col-12 col-md-6 social-link-item">
-              <div style="text-align:right; padding-right: 200px;">
-                <a href="https://sg.linkedin.com/in/kaera-barber-4bb344279" target="_blank" class="social-icon linkedin" aria-label="LinkedIn">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-                <p style="margin-top: 10px;">LinkedIn</p>
-              </div>
+          <!-- Social Media Links - Side by Side -->
+          <div class="row justify-content-center"> 
+            <div class="col-4 col-md-3 social-link-item text-center">
+              <a href="https://sg.linkedin.com/in/kaera-barber-4bb344279" target="_blank" class="social-icon linkedin" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <p style="margin-top: 10px;">LinkedIn</p>
             </div>
 
-            <div class="col-12 col-md-6 social-link-item">
-              <div style="text-align:left; padding-left: 200px;">
-                <a href="https://www.instagram.com/soluckae?igsh=eDNqd3Bsa2hzdm82" target="_blank" class="social-icon instagram" aria-label="Instagram">
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <p style="margin-top: 10px;">Instagram</p>
-              </div>
+            <div class="col-4 col-md-3 social-link-item text-center">
+              <a href="https://www.instagram.com/soluckae?igsh=eDNqd3Bsa2hzdm82" target="_blank" class="social-icon instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <p style="margin-top: 10px;">Instagram</p>
+            </div>
+
+            <div class="col-4 col-md-3 social-link-item text-center">
+              <a href="/files/kaera_resume (1).pdf" target="_blank" class="resume-icon" aria-label="Resume">
+                <i class="fas fa-file-pdf"></i>
+              </a>
+              <p style="margin-top: 10px;">Resume</p>
             </div>
           </div>
           <br>
           <hr>
           <br>
           
-          <!-- Resume Link -->
-          <div class="row"> 
-            <div class="col-12  social-link-item">
-              <div style="text-align:center; "> 
-                <a href="/files/kaera_resume (1).pdf" target="_blank" class="resume-icon" aria-label="Resume">
-                  <i class="fas fa-file-pdf"></i>
-                </a>
-                <p style="margin-top: 10px;">Resume</p>
-              </div>
+          <!-- Contact Form -->
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+              <h3 class="text-center mb-4">Send me a message</h3>
+              <form action="https://formspree.io/f/mojlgrjv" method="POST">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                
+                <div class="mb-3">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input type="text" class="form-control" id="subject" name="subject" required>
+                </div>
+                
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>

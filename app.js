@@ -77,7 +77,7 @@ app.get('/work/:id', (req, res) => {
 
     work4: {
         title: 'Learn@RP App', // Design
-        mainImage: 'cat1_work4_ss1',
+        mainImage: 'cat1_work4_ss1.png',
         image1:'cat1_work4_ss1.png',
         image2:'cat1_work4_ss2.png',
         image3:'cat1_work4_ss3.png',
@@ -160,41 +160,22 @@ app.get('/work/:id', (req, res) => {
     },
 
     work9: {
-        title: 'Green Habit Tracker', // Development
-        mainImage: 'image.jpg',
-        text1: '',
-        text2: '',
-        text3: '',
-        image1: 'image.jpg',
-        text4: '',
-        text5: '',
-        text6: '',
-        image2: 'image.jpg',
-        text7:'',
-        text8: '',
-        text9: '',
-        image3: 'image.jpg',
-        text10: '',
-        video1: 'video.mp4'
-    },
-
-    work10: {
         title: 'Student Timetable', // Development
-        mainImage: 'cat2_work5_ss1.png',
+        mainImage: 'cat2_work4_ss1.png',
         text1: 'Overview: This project involved developing a web application that allows students to track and manage their school activities in one centralised platform. Users can add, edit, and delete entries such as lessons, events, and co-curricular activities, making it easier to organise their schedules. This was a class group assignment where I contributed primarily to the backend development, database setup, API integration, CSS styling, and documentation.',
         text2: 'Problem Identified: Students often struggle to keep track of lessons, CCAs, and events because their schedules are spread across multiple platforms such as emails, school portals, and personal calendars. Changes to schedules, such as make-up classes or special events, can further contribute to disorganisation and stress. There is a need for a single platform that allows students to manage all their school-related activities efficiently.',
         text3: 'Concept: The concept behind the Student Timetable Web App was to create a simple digital timetable and activity tracker that centralises all scheduled activities in one place. By allowing students to customise and update their own schedules, the app empowers users to stay organised and maintain better control over their time. The overall approach prioritises clarity, accessibility, and ease of use.',
-        image1: 'cat2_work5_ss2.png',
+        image1: 'cat2_work4_ss2.png',
         text4: 'User Experience: The user experience was designed to be straightforward and task-focused. Users are presented with a list of activities upon entering the app, allowing them to immediately view their schedules. Clear options are provided for adding, editing, and deleting activities, ensuring that updates can be made quickly when changes occur. Forms use labelled input fields and consistent layouts to reduce errors and support usability. The interface emphasises efficiency so that students can complete tasks with minimal step',
         text5: 'System Architecture: The application follows a client–server architecture, with a React frontend communicating with a backend web service through RESTful API endpoints. The backend connects to a remote database hosted on Aiven, which stores all activity-related data. This setup enables persistent storage and allows data to be accessed and updated in real time. Separating the frontend, backend, and database layers improves maintainability and scalability.',
         text6: 'Development Process: The project began with ideation and documentation to define the problem, target users, and core features. After planning the routes and database structure, I implemented the backend web service and configured a remote database hosted on Aiven. API endpoints were created to handle all CRUD (Create, Read, Update, Delete) operations. On the frontend, React components were developed to fetch and display activity data, while controlled forms were used to manage user input. I also handled CSS styling to ensure a clean and readable interface. Continuous testing was performed to verify that data was correctly sent between the frontend, backend, and database',
-        image2: 'cat2_work5_ss3.png',
+        image2: 'cat2_work4_ss3.png',
         text7:'Challenges: One challenge was ensuring that data updates were reflected immediately after adding, editing, or deleting activities. This was resolved by properly re-fetching data from the backend after each operation. Another challenge involved debugging API requests and responses, which helped strengthen my understanding of HTTP methods and error handling.',
         text8: 'Reflection: This project strengthened my understanding of full-stack development and how frontend and backend systems work together. I gained practical experience in building RESTful APIs, working with remote databases, and rendering dynamic data in React. Working in a team environment also improved my communication and planning skills. In future iterations, I would like to implement features such as user authentication, activity filtering, reminders, and calendar views. Overall, this project demonstrates my ability to design and develop functional, user-focused web applications.',
         text9: '',
-        image3: 'cat2_work5_ss4.png',
+        image3: 'cat2_work4_ss4.png',
         text10: '',
-        video1: 'cat2_work5_video.mp4'
+        video1: 'cat2_work4_video.mp4'
     },
 
 };

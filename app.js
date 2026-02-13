@@ -43,7 +43,7 @@ app.get('/work/:id', (req, res) => {
     
     // Project data
     const projects = {
-    work1: {
+    work2: {
         title: 'Digital Banner', // Design
         mainImage: 'cat1_work2.png',
         text1: `Overview: This digital banner was created as part of a school assignment where we were tasked with designing a 336x280px advertisement for a fictional travel company called Travelly. The main objective of the work was to promote the company's travel packages and its flight and hotel booking services through an eye-catching and engaging design.`,
@@ -52,7 +52,7 @@ app.get('/work/:id', (req, res) => {
         text4: `Image editing and composition: To achieve the scrapbook look, I primarily used masking techniques for cutting out the stickers from an embedded picture and clip masking to embed pictures of the landmarks into rectangle frames. To make the banner have a warmer and vintage-looking atmosphere, I applied a semi-transparent brown overlay as a filter and adjusted it's colour balance to product a warm, slight aged tone for the paper. This not only complimented my colour scheme and scrapbooking concept but also enhances the inviting and nostalgic feel of the whole digital banner.`
     },
 
-    work2: {
+    work1: {
         title: '3x3 Grid', // Design
         mainImage: 'cat1_work1.jpg',
         text1: `Overview: This 3x3 grid was created as a part of a school assignment where we were tasked with designing a 3x3 Instagram Grid advertisement for a fictional travel company called Travelly. The main objective of this work was to design a cohesive social media campaign that promotes the company's discounts while encouraging user engagement.`,
